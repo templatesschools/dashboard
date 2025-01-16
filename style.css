@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+/* -----------------------------------------------
+Website Template Style
+Name:        Website Template
+License:     Free Version
+Version:     2.0
+Author:      AS ★ Official
+Author Url:  https://timefactsmedia.xyz/
+contact: asupdatemedia518@gmail.com
+----------------------------------------------- */
+
+.mainHeader_logo {
+    width: 300px;
+}
+
+.mainHeader_logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Rowdies", serif;
+    animation: mainLogoAnimate 20s infinite;
+    display: inline-block;
+}
+
+.mainHeader_logo a span {
+    color: #FF00CC;
+    
+}
+
+@keyframes mainLogoAnimate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.mainHeader_ct {
+    background-color: #ddd;
+    
+}
+
+.topNavbar {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.topNavbar ul {
+    display: flex;
+    align-items: center;
+    gap: 0px 5px;
+}
+
+.topNavbar ul li {
+    list-style-type: none;
+    padding: 0px 5px;
+}
+
+.topNavbar ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.topNavbar ul li a:focus,
+.topNavbar ul li a:hover {
+    color: rgb(228, 14, 192);
+}
+
+
+.topNavbar ul li a .topMenuIcon {
+    font-size: 25px;
+}
+
+/* Start User Register Area Design */
+.userRegister_ct {
+    display: flex;
+    gap: 0px 10px;
+}
+
+.userRegister_ct a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.userRegister_ct a:hover {
+    color: #00FF7F;
+    transition: 0.3s ease-in-out;
+}
+
+.signUpBtn_ct a {
+    background-color: black;
+    color: white;
+}
+
+.signUpBtn_ct a::before {
+    position: absolute;
+    content: '';
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    top: -5px;
+    left: -5px;
+    background-image: linear-gradient(45deg, transparent, transparent, black, #00FF7F, #0000ff, #ff00bf, #ff0040, #40ff00);
+    border-radius: 10px;
+    z-index: -1;
+    animation: signUpBtnAnimate 20s infinite;
+    background-size: 400%;
+    filter: blur(10px);
+    
+}
+
+@keyframes signUpBtnAnimate {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 600% 0;
+    }
+}
+
+.logInBtn_ct a::before {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.logInBtn_ct a::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.logInBtn_ct a:focus::after,
+.logInBtn_ct a:focus::before,
+.logInBtn_ct a:hover::before,
+.logInBtn_ct a:hover::after {
+    width: 50%;
+    transition: 0.3s ease-in-out;
+}
+/* End User Register Area Design */
+
+/* Mobile Responsive Design */
+.userRegisterArea {
+    display: flex;
+    align-items: center;
+    gap: 0px 5px;
+}
+
+.mobileResponsive_ct {
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0px;
+    background-color: rgba(0, 179, 24, 0.699);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.mobileResponsiveBox {
+    width: 30px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: black;
+    
+}
+.mobileResponsiveBox2 {
+    width: 25px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: black;
+}
+/* End Mobile Responsive Design */
+
+/* End Header Menubar Section Design */
+
+
+/* Start Global Menubar Section Design */
+.globalMenubar_ct {
+    background-color: black;
+}
+
+.globalMenubar_ct .globalMenubar {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.globalMenubar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0px 5px;
+}
+
+.globalMenubar ul li {
+    padding: 0px 5px;
+}
+
+.globalMenubar ul li a {
+    text-decoration: none;
+    color: #f3f3f3;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    padding: 10px;
+    position: relative;
+}
+
+.globalMenubar ul li a:focus,
+.globalMenubar ul li a:hover {
+    color: #00FF7F;
+}
+
+.globalMenubar ul li a::before {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #00FF7F;
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.globalMenubar ul li a:focus::before,
+.globalMenubar ul li a:hover::before {
+    width: 100%;
+}
+
+
+/* Global Search BTN Design */
+.globalSearchBox {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0px 0px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 50px;
+    padding: 0px 0px 0px 0px;
+    overflow: hidden;
+}
+
+.globalSearchBox input:focus,
+.globalSearchBox:hover input {
+    width: 200px;
+    padding: 0px 10px 0px 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.searchIcon_ct a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.globalSearchBox input {
+    width: 0;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+.searchIcon_ct a .searchIconBtn {
+    font-size: 25px;
+    background-color: #059862;
+    display: block;
+    padding: 3px;
+    
+}
+/* End Global Menubar Section Design */
+
+
+
+/* Start Top Google Ads Section Design */
+.topGoogleAds_ct {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.topgoogleAds_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 728px;
+    height: 90px;
+    border: 1px solid black;
+}
+/* End Top Google Ads Section Design */
+
+
+
+
+/* Start PubliceHeadLine Text Design */
+.pb_hL_ct {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pb_hL_bx {
+    text-align: center;
+}
+/* End PubliceHeadLine Text Design */
+
+
+
+/* Start Hero Public Content Section Design */
+
+.templateIframe_ct {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    gap: 25px 15px;
+    padding: 40px 0px 50px 0px;
+}
+
+.template_Box {
+    width: 300px;
+    text-align: center;
+}
+
+.templateIframe_image {
+    width: 300px;
+    height: 420px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    overflow: hidden;
+}
+
+.templateIframe_image img {
+    width: 300px;
+    
+}
+
+.templateHeading_name {
+    padding: 10px 0px;
+}
+/* End Hero Public Content Section Design */
+
+
+
+
+/* Start Main Footer Section Design */
+.mainFooter_area {
+    background-color: black;
+}
+
+.mainFooter_ct {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 20px 0px;
+}
+
+/* Footer Logo Design */
+.mainFooterLogo_ct{
+    width: 300px;
+    text-align: center;
+}
+
+.mainFooterLogo_title{
+    display: inline-block;
+}
+.mainFooterLogo_title a {
+    text-decoration: none;
+}
+.mainFooterLogo_title a h1 {
+    color: #00FF7F;
+    font-size: 30px;
+    font-family: "Rowdies", serif;
+    font-weight: 600;
+}
+
+.mainFooterLogo_title a h1:hover {
+    opacity: 0.8;
+}
+.mainFooterLogo_title:hover h1{
+    transform: rotateY(360deg);
+    transition: 3s ease-in-out;
+}
+
+.mainFooterLogoTitle_des p {
+    color: #d3d3d3;
+    font-size: 16px;
+    letter-spacing: 1.1px;
+}
+
+.mainFooterLogo_title a img {
+    width: 100px;
+}
+/* End Footer Logo Design */
+
+/* Footer Follow Us Design */
+.follow_more_contact_design {
+    padding-bottom: 10px;
+}
+
+.follow_more_contact_design h1 {
+    color: #f3f3f3;
+    border-bottom: 3px solid #f3f3f3;
+    border-radius: 10px;
+}
+
+.mainFooterFollowUs_ct .ft_follow_dt {
+    padding: 5px 0px;
+}
+
+.mainFooterFollowUs_ct .ft_follow_dt a {
+    text-decoration: none;
+    color: #f3f3f3;
+    font-size: 18px;
+}
+
+.mainFooterFollowUs_ct .ft_follow_dt a:focus,
+.mainFooterFollowUs_ct .ft_follow_dt a:hover {
+    color: #00FF7F;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    border-bottom: 1px solid #f3f3f3;    
+}
+/* End Footer Follow Us Design */
+
+/* Footer More Links Design */
+.footerMoreLinks_ct .moreLink_dt {
+    padding: 5px 0px;
+}
+
+.footerMoreLinks_ct .moreLink_dt a {
+    text-decoration: none;
+    color: #f3f3f3;
+    font-size: 18px;
+}
+
+.footerMoreLinks_ct .moreLink_dt a:focus,
+.footerMoreLinks_ct .moreLink_dt a:hover {
+    color: #00FF7F;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    border-bottom: 1px solid #f3f3f3;
+}
+/* End Footer More Links Design */
+
+
+/* Footer Contact Us Design */
+.ft_gmail_sales_dt {
+    padding: 5px 0px;
+}
+
+.ft_gmail_sales_dt h2 {
+    color: #f3f3f3;
+}
+
+.ft_gmail_sales_dt a {
+    text-decoration: none;
+    color: #00FF7F;
+    font-size: 18px;
+}
+
+.ft_gmail_sales_dt a:hover {
+    opacity: 0.8;
+    border-bottom: 1px solid #f3f3f3;
+}
+/* End Footer Contact Us Design */
+
+/* Start Copyright Author Area Design */
+.ft_copyRight_socialLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px 20px;
+    padding-top: 50px;
+}
+
+.ftCrIconLinks a {
+    text-decoration: none;
+}
+
+.ftCrIconLinks a i {
+    font-size: 30px;
+    color: #00FF7F;
+}
+
+.ftCrIconLinks a:focus i {
+    color: #f3f3f3;
+    transform: scale(1.1);
+}
+
+.ftCrIconLinks a i:hover {
+    color: #f3f3f3;
+    transform: scale(1.1);
+}
+
+.copyRightAuthor_name {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.copyRightAuthor_name h3 {
+    color: #f3f3f3;
+}
+
+.copyRightAuthor_name h3 a {
+    color: #00FF7F;
+    text-decoration: none;
+    border-bottom: 1px solid #00FF7F;
+}
+/* End Copyright Author Area Design */
+
+/* End Main Footer Section Design */
+
+
+
+
+
+
+/* Start Mobile Responsive Area Design */
+.mobileScreenDesign_section {
+    display: none;
+}
+
+.mobileScreenDesign_ct {
+    max-width: 1250px;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #ddd;
+}
+
+.mobileResponsive_area {
+    display: none;
+}
+
+
+.mobile_userRegister_ct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 0px 5px;
+}
+
+.mobileScreenDesign_ct a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    border: 1px solid black;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.mobileScreenDesign_ct a:hover {
+    background-color: #059862;
+    color: white;
+}
+
+.mobileScreenDesign_ct .mobile_MenuIcon {
+    font-size: 20px;
+}
+
+.mobileScreenDesign_ct ul li {
+    padding: 15px 0px;
+    
+}
+
+.closeMobileMenu_icon .closeMobileMenuIcon {
+    font-size: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: rgba(4, 250, 197, 0.664);
+    border-radius: 10px;
+}
+
+/* Mobile Search Btn Design */
+
+/* End Mobile Search Btn Design */
+
+@media (max-width: 1100px) {
+    .mobileResponsive_area {
+        display: block;
+    }
+
+    .topNavbar ul {
+        display: none;
+    }
+
+    .userRegister_ct {
+        display: none;
+    }
+
+    .globalMenubar_section {
+        display: none;
+    }
+
+    .mobileScreenDesign_section {
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        height: 0px;
+        overflow: auto;
+        z-index: 999;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .mainFooter_ct {
+        justify-content: center;
+    }
+    
+}
+/* End Mobile Responsive Area Design */
